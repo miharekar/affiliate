@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Link Macher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  </head>
+  <body>
+    <h1>Amazon Link Macher</h1>
+    <%- if urls -%>
+      <%- urls.each do |url| -%>
+        <p><%= url %></p>
+      <%- end -%>
+    <%- else -%>
+      <form action="/" method="post">
+        <label for="urls">URLs</label>
+        <br>
+        <textarea name="urls" cols="100" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    <%- end -%>
+  </body>
+</html>

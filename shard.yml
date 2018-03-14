@@ -1,0 +1,18 @@
+name: affiliate
+version: 0.0.1
+
+authors:
+  - Miha Rekar <info@mr.si>
+
+targets:
+  affiliate:
+    main: src/affiliate.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    # version: 0.21.0 # Needed for Raspberry Pi which is running Crystal 0.23.1
+
+crystal: 0.24.2
+
+license: MIT
